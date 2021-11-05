@@ -48,15 +48,10 @@ return static function (RouteBuilder $routes) {
         /*
          * Here, we are connecting '/' (base path) to a controller called 'Pages',
          * its action called 'display', and we pass a param to select the view file
-         * to use (in this case, templates/Pages/home.php)...
+         * to use (in this case, templates/Pages/home.php)... http://crud/products/view
          */
-        $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
-
-        /*
-         * ...and connect the rest of 'Pages' controller's URLs.
-         */
-        $builder->connect('/pages/*', 'Pages::display');
-
+        $builder->connect('/', ['controller' => 'Products', 'action' => 'index']);
+        $builder->connect('/products/view', ['controller' => 'Products', 'action' => 'view']);
         /*
          * Connect catchall routes for all controllers.
          *
