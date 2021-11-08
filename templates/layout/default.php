@@ -34,11 +34,7 @@ $description = 'STOCK';
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
 
-    <?= $this->Html->css(
-        [
-            'bootstrap',
-        ]
-    ) ?>
+    <?= $this->Html->css(['bootstrap']) ?>
     <?= $this->Html->script(['bootstrap']) ?>
 
     <?= $this->fetch('meta') ?>
