@@ -134,7 +134,7 @@ $description = 'STOCK';
     </header>
     <div class="nav-block" style="height: 6rem;"></div>
     <main class="main">
-        <div class="mx-4">
+        <div>
             <?= $this->Flash->render() ?>
             <?= $this->fetch('content') ?>
         </div>

@@ -24,7 +24,6 @@ class ProductsController extends AppController
             'limit' => 7
         ];
         $products = $this->paginate($this->Products);
-
         $this->set(compact('products'));
     }
 

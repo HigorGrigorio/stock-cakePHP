@@ -26,7 +26,7 @@
                     <td><?= h($productsCategory->created) ?></td>
                     <td><?= h($productsCategory->modified) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $productsCategory->id], ['class' => 'link-warning']) ?>
+                        <?= $this->Html->link(__('View'), ['action' => 'view', $productsCategory->id], ['class' => 'link-primary']) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $productsCategory->id], ['class' => 'link-warning']) ?>
                         <?= $this->Form->postLink(
                             __('Delete'),
